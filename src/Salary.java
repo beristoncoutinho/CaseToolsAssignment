@@ -1,53 +1,85 @@
 public class Salary {
-    
-    private double basicSalary; 
-    private double HRA; 
-    private double DA;
-    private double grossSalary; 
-    private double incomeTax; 
-    private double netSalary; 
-   
-    public Salary(double basicSalary) {
-        this.basicSalary = basicSalary;
-        this.HRA = 0.1 * basicSalary;
-        this.DA = 0.73 * basicSalary;
-        this.grossSalary = basicSalary + HRA + DA;
-        this.incomeTax = 0.3 * grossSalary;
-        this.netSalary = grossSalary - incomeTax;
-    }
+	/** 
+	 * @author Beris
+	 *Represents a Salary object that contains basic salary, HRA, DA, gross salary, income tax, and net salary.
+	 */
+	 
+	public class Salary {
+	    
+	    private double basicSalary; // The basic salary of the employee.
+	    private double HRA; // The house rent allowance of the employee.
+	    private double DA; // The dearness allowance of the employee.
+	    private double grossSalary; // The gross salary of the employee.
+	    private double incomeTax; // The income tax of the employee.
+	    private double netSalary; // The net salary of the employee.
 
-   
-    public double getBasicSalary() {
-        return basicSalary;
-    }
+	    /**
+	     * Constructs a Salary object with the given basic salary and calculates HRA, DA, gross salary, income tax, and net salary.
+	     * @param basicSalary The basic salary of the employee.
+	     */
+	    public Salary(double basicSalary) {
+	        this.basicSalary = basicSalary;
+	        this.HRA = 0.1 * basicSalary;
+	        this.DA = 0.73 * basicSalary;
+	        this.grossSalary = basicSalary + HRA + DA;
+	        this.incomeTax = 0.3 * grossSalary;
+	        this.netSalary = grossSalary - incomeTax;
+	    }
 
-    
-    public void setBasicSalary(double basicSalary) {
-        this.basicSalary = basicSalary;
-    }
+	    /**
+	     * Returns the basic salary of the employee.
+	     * @return The basic salary of the employee.
+	     */
+	    public double getBasicSalary() {
+	        return basicSalary;
+	    }
 
-    public double getHRA() {
-        return HRA;
-    }
+	    /**
+	     * Sets the basic salary of the employee.
+	     * @param basicSalary The basic salary of the employee.
+	     */
+	    public void setBasicSalary(double basicSalary) {
+	        this.basicSalary = basicSalary;
+	    }
 
-   
-    public double getDA() {
-        return DA;
-    }
+	    /**
+	     * Returns the HRA of the employee.
+	     * @return The HRA of the employee.
+	     */
+	    public double getHRA() {
+	        return HRA;
+	    }
 
-    
-    public double getGrossSalary() {
-        return grossSalary;
-    }
+	    /**
+	     * Returns the DA of the employee.
+	     * @return The DA of the employee.
+	     */
+	    public double getDA() {
+	        return DA;
+	    }
 
-   
-    public double getIncomeTax() {
-        return incomeTax;
-    }
+	    /**
+	     * Returns the gross salary of the employee.
+	     * @return The gross salary of the employee.
+	     */
+	    public double getGrossSalary() {
+	        return grossSalary;
+	    }
 
-    public double getNetSalary() {
-        return netSalary;
-    }
-    
-} 
+	    /**
+	     * Returns the income tax of the employee.
+	     * @return The income tax of the employee.
+	     */
+	    public double getIncomeTax() {
+	        return incomeTax;
+	    }
 
+	    /**
+	     * Returns the net salary of the employee.
+	     * @return The net salary of the employee.
+	     */
+	    public double getNetSalary() {
+	        return netSalary;
+	    }
+	    
+	}
