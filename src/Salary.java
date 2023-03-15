@@ -1,11 +1,11 @@
 public class Salary {
-	/** 
+	/**
 	 * @author Beris
 	 *Represents a Salary object that contains basic salary, HRA, DA, gross salary, income tax, and net salary.
 	 */
-	 
+
 	public class Salary {
-	    
+
 	    private double basicSalary; // The basic salary of the employee.
 	    private double HRA; // The house rent allowance of the employee.
 	    private double DA; // The dearness allowance of the employee.
@@ -81,5 +81,6 @@ public class Salary {
 	    public double getNetSalary() {
 	        return netSalary;
 	    }
-	    
+
 	}
+	//task was successful
